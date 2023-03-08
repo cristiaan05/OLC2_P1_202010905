@@ -1,6 +1,6 @@
-#line 2 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.yy.c"
+#line 2 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.yy.c"
 
-#line 4 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.yy.c"
+#line 4 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.yy.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -547,8 +547,8 @@ static const flex_int16_t yy_rule_linenum[16] =
 #define yymore() yymore_used_but_not_detected
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
-#line 1 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.l"
-#line 2 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.l"
+#line 1 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.l"
+#line 2 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.l"
     /* se convierte con: flex --verbose lexer.y*/
     /* opcciones para encapsulamiento */
 /*%option reentrant noyywrap nounput batch noinput*/
@@ -569,10 +569,10 @@ static const flex_int16_t yy_rule_linenum[16] =
     typedef yy::Parser::token_type token_type;
 /// código adicinoal aquí
 
-#line 573 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.yy.c"
+#line 573 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.yy.c"
 /* ============== INICIO DE SCANNER ==========  */
 /* expresiones regulares */
-#line 576 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.yy.c"
+#line 576 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.yy.c"
 
 #define INITIAL 0
 
@@ -897,11 +897,11 @@ YY_DECL
 
 	{
 /* %% [7.0] user's declarations go here */
-#line 39 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.l"
+#line 39 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.l"
 
 
 
-#line 43 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.l"
+#line 43 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.l"
 // inicia la lectura
     loc.step();
 
@@ -912,7 +912,7 @@ YY_DECL
 
     /* caracteres ignorados */
 
-#line 916 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.yy.c"
+#line 916 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -1003,13 +1003,13 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
-#line 53 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.l"
+#line 53 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.l"
 ; /* comentarios de una linea */
 	YY_BREAK
 case 2:
 /* rule 2 can match eol */
 YY_RULE_SETUP
-#line 55 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.l"
+#line 55 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.l"
 {
 
         loc.step();
@@ -1018,7 +1018,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 61 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.l"
+#line 61 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.l"
 ; /* caracteres en blanco */
 	YY_BREAK
 /* Lexemas */
@@ -1027,64 +1027,64 @@ YY_RULE_SETUP
     */
 case 4:
 YY_RULE_SETUP
-#line 67 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.l"
+#line 67 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.l"
 return Parser::symbol_type( token::EVALUAR, loc );
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 68 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.l"
+#line 68 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.l"
 return Parser::symbol_type( token::SUMA, loc );
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 69 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.l"
+#line 69 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.l"
 return Parser::symbol_type( token::MENOS, loc );
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 70 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.l"
+#line 70 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.l"
 return Parser::symbol_type( token::PARIZQ, loc );
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 71 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.l"
+#line 71 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.l"
 return Parser::symbol_type( token::PARDER, loc );
 	YY_BREAK
 /* defincion clásica / para caracteres especiales */
 case 9:
 YY_RULE_SETUP
-#line 74 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.l"
+#line 74 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.l"
 return Parser::symbol_type( token::PYCOMA, loc );
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 75 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.l"
+#line 75 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.l"
 return Parser::symbol_type( token::POR, loc );
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 76 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.l"
+#line 76 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.l"
 return Parser::symbol_type( token::DIVIDIDO, loc );
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 77 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.l"
+#line 77 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.l"
 return Parser::symbol_type( token::MODULO, loc );
 	YY_BREAK
 /* TOKENS  */
 case 13:
 YY_RULE_SETUP
-#line 82 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.l"
+#line 82 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.l"
 return Parser::make_ID(yytext, loc);
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 83 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.l"
+#line 83 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.l"
 return Parser::make_NUMERO(yytext, loc);
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 84 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.l"
+#line 84 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.l"
 {
 
     /*std::cerr<<loc <<": "<<"error token no esperado"<<  std::endl;*/
@@ -1101,10 +1101,10 @@ YY_RULE_SETUP
 /* <<EOF>> {return Parser::make_END(loc);} */
 case 16:
 YY_RULE_SETUP
-#line 102 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.l"
+#line 102 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.l"
 ECHO;
 	YY_BREAK
-#line 1108 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.yy.c"
+#line 1108 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -2383,7 +2383,7 @@ void yyfree (void * ptr , yyscan_t yyscanner)
 
 /* %ok-for-header */
 
-#line 102 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/lexer.l"
+#line 102 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/lexer.l"
 
 
 

@@ -32,7 +32,7 @@
 
 
 /**
- ** \file /home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.hpp
+ ** \file /home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.hpp
  ** Define the yy::parser class.
  */
 
@@ -42,10 +42,10 @@
 // especially those whose name start with YY_ or yy_.  They are
 // private implementation details that can be changed or removed.
 
-#ifndef YY_YY_HOME_CRISTIAN05_ESCRITORIO_COMPI2_COMPI2_1S_2023_EJEMPLO_AST_CALCULADORA_PARSER_HPP_INCLUDED
-# define YY_YY_HOME_CRISTIAN05_ESCRITORIO_COMPI2_COMPI2_1S_2023_EJEMPLO_AST_CALCULADORA_PARSER_HPP_INCLUDED
+#ifndef YY_YY_HOME_CRISTIAN05_ESCRITORIO_COMPI2_OLC2_202010905_OLC2_P1_202010905_PARSER_HPP_INCLUDED
+# define YY_YY_HOME_CRISTIAN05_ESCRITORIO_COMPI2_OLC2_202010905_OLC2_P1_202010905_PARSER_HPP_INCLUDED
 // "%code requires" blocks.
-#line 19 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.y"
+#line 19 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.y"
 
     /* código  que se inserta al inicioo por lo regular son cabeceras*/
     #include<iostream> 
@@ -59,7 +59,7 @@
     */
 
 
-#line 63 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.hpp"
+#line 63 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.hpp"
 
 
 # include <cstdlib> // std::abort
@@ -194,7 +194,7 @@
 #endif
 
 namespace yy {
-#line 198 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.hpp"
+#line 198 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.hpp"
 
 
 
@@ -1538,9 +1538,9 @@ switch (yykind)
 
 
 } // yy
-#line 1542 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.hpp"
+#line 1542 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.hpp"
 
 
 
 
-#endif // !YY_YY_HOME_CRISTIAN05_ESCRITORIO_COMPI2_COMPI2_1S_2023_EJEMPLO_AST_CALCULADORA_PARSER_HPP_INCLUDED
+#endif // !YY_YY_HOME_CRISTIAN05_ESCRITORIO_COMPI2_OLC2_202010905_OLC2_P1_202010905_PARSER_HPP_INCLUDED

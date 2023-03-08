@@ -31,12 +31,12 @@
 // version 2.2 of Bison.
 
 /**
- ** \file /home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/location.hh
+ ** \file /home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/location.hh
  ** Define the yy::location class.
  */
 
-#ifndef YY_YY_HOME_CRISTIAN05_ESCRITORIO_COMPI2_COMPI2_1S_2023_EJEMPLO_AST_CALCULADORA_LOCATION_HH_INCLUDED
-# define YY_YY_HOME_CRISTIAN05_ESCRITORIO_COMPI2_COMPI2_1S_2023_EJEMPLO_AST_CALCULADORA_LOCATION_HH_INCLUDED
+#ifndef YY_YY_HOME_CRISTIAN05_ESCRITORIO_COMPI2_OLC2_202010905_OLC2_P1_202010905_LOCATION_HH_INCLUDED
+# define YY_YY_HOME_CRISTIAN05_ESCRITORIO_COMPI2_OLC2_202010905_OLC2_P1_202010905_LOCATION_HH_INCLUDED
 
 # include <iostream>
 # include <string>
@@ -54,7 +54,7 @@
 # endif
 
 namespace yy {
-#line 58 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/location.hh"
+#line 58 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/location.hh"
 
   /// A point in a source file.
   class position
@@ -299,6 +299,6 @@ namespace yy {
   }
 
 } // yy
-#line 303 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/location.hh"
+#line 303 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/location.hh"
 
-#endif // !YY_YY_HOME_CRISTIAN05_ESCRITORIO_COMPI2_COMPI2_1S_2023_EJEMPLO_AST_CALCULADORA_LOCATION_HH_INCLUDED
+#endif // !YY_YY_HOME_CRISTIAN05_ESCRITORIO_COMPI2_OLC2_202010905_OLC2_P1_202010905_LOCATION_HH_INCLUDED

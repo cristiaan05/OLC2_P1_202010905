@@ -42,11 +42,11 @@
 
 
 // Unqualified %code blocks.
-#line 34 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.y"
+#line 34 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.y"
 
 yy::Parser::symbol_type yylex(void* yyscanner, yy::location& loc, class Proyecto1::ParserCtx & ctx);
 
-#line 50 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.cpp"
+#line 50 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.cpp"
 
 
 #ifndef YY_
@@ -138,7 +138,7 @@ yy::Parser::symbol_type yylex(void* yyscanner, yy::location& loc, class Proyecto
 #define YYRECOVERING()  (!!yyerrstatus_)
 
 namespace yy {
-#line 142 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.cpp"
+#line 142 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.cpp"
 
   /// Build a parser object.
   Parser::Parser (void *scanner_yyarg, yy::location& loc_yyarg, class Proyecto1::ParserCtx & ctx_yyarg)
@@ -602,94 +602,94 @@ namespace yy {
           switch (yyn)
             {
   case 2: // listasentencias: listasentencias sentencia
-#line 88 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.y"
+#line 88 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.y"
            {
                Proyecto1::AST::getAST()->listaSentencias.append(yystack_[0].value.as <  Proyecto1::Sentencia  > ());
            }
-#line 610 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.cpp"
+#line 610 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.cpp"
     break;
 
   case 3: // listasentencias: sentencia
-#line 92 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.y"
+#line 92 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.y"
            {
                Proyecto1::AST::getAST()->listaSentencias.append(yystack_[0].value.as <  Proyecto1::Sentencia  > ());
            }
-#line 618 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.cpp"
+#line 618 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.cpp"
     break;
 
   case 4: // sentencia: EVALUAR PARIZQ expresion PARDER PYCOMA
-#line 98 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.y"
+#line 98 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.y"
        {
            yylhs.value.as <  Proyecto1::Sentencia  > () = Proyecto1::Sentencia(yystack_[2].value.as <  Proyecto1::Expresion*  > ());
        }
-#line 626 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.cpp"
+#line 626 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.cpp"
     break;
 
   case 5: // expresion: expresion SUMA expresion2
-#line 105 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.y"
+#line 105 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.y"
        {
            yylhs.value.as <  Proyecto1::Expresion*  > () = new Proyecto1::Expresion(yystack_[2].value.as <  Proyecto1::Expresion*  > (), yystack_[0].value.as <  Proyecto1::Expresion*  > (), '+');
        }
-#line 634 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.cpp"
+#line 634 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.cpp"
     break;
 
   case 6: // expresion: expresion MENOS expresion2
-#line 109 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.y"
+#line 109 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.y"
        {
            yylhs.value.as <  Proyecto1::Expresion*  > () = new Proyecto1::Expresion(yystack_[2].value.as <  Proyecto1::Expresion*  > (), yystack_[0].value.as <  Proyecto1::Expresion*  > (), '-');
        }
-#line 642 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.cpp"
+#line 642 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.cpp"
     break;
 
   case 7: // expresion: expresion2
-#line 113 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.y"
+#line 113 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.y"
        {
            yylhs.value.as <  Proyecto1::Expresion*  > () = yystack_[0].value.as <  Proyecto1::Expresion*  > ();
        }
-#line 650 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.cpp"
+#line 650 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.cpp"
     break;
 
   case 8: // expresion2: expresion2 POR NUMERO
-#line 119 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.y"
+#line 119 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.y"
        {
            Proyecto1::Expresion *expDer = new Proyecto1::Expresion(nullptr, nullptr, '#');
            expDer->valor = yystack_[0].value.as < std::string > ();
            yylhs.value.as <  Proyecto1::Expresion*  > () = new Proyecto1::Expresion(yystack_[2].value.as <  Proyecto1::Expresion*  > (), expDer, '*');
        }
-#line 660 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.cpp"
+#line 660 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.cpp"
     break;
 
   case 9: // expresion2: expresion2 DIVIDIDO NUMERO
-#line 125 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.y"
+#line 125 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.y"
        {
            Proyecto1::Expresion *expDer = new Proyecto1::Expresion(nullptr, nullptr, '#');
            expDer->valor = yystack_[0].value.as < std::string > ();
            yylhs.value.as <  Proyecto1::Expresion*  > () = new Proyecto1::Expresion(yystack_[2].value.as <  Proyecto1::Expresion*  > (), expDer, '/');
        }
-#line 670 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.cpp"
+#line 670 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.cpp"
     break;
 
   case 10: // expresion2: expresion2 MODULO NUMERO
-#line 131 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.y"
+#line 131 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.y"
          {
          Proyecto1::Expresion *expDer = new Proyecto1::Expresion(nullptr, nullptr, '#');
            expDer->valor = yystack_[0].value.as < std::string > ();
            yylhs.value.as <  Proyecto1::Expresion*  > () = new Proyecto1::Expresion(yystack_[2].value.as <  Proyecto1::Expresion*  > (), expDer, '%');
         }
-#line 680 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.cpp"
+#line 680 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.cpp"
     break;
 
   case 11: // expresion2: NUMERO
-#line 137 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.y"
+#line 137 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.y"
        {
            yylhs.value.as <  Proyecto1::Expresion*  > () = new Proyecto1::Expresion(nullptr, nullptr, '#');
            yylhs.value.as <  Proyecto1::Expresion*  > ()->valor = yystack_[0].value.as < std::string > ();
        }
-#line 689 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.cpp"
+#line 689 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.cpp"
     break;
 
 
-#line 693 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.cpp"
+#line 693 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.cpp"
 
             default:
               break;
@@ -1160,9 +1160,9 @@ namespace yy {
 
 
 } // yy
-#line 1164 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.cpp"
+#line 1164 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.cpp"
 
-#line 144 "/home/cristian05/Escritorio/COMPI2/compi2-1s-2023/ejemplo-ast/calculadora/parser.y"
+#line 144 "/home/cristian05/Escritorio/COMPI2/OLC2_202010905/OLC2_P1_202010905/parser.y"
 
 void yy::Parser::error(const yy::location& l, const std::string& m)
 {
